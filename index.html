@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
+    
+    <title> Brand X Notepad </title>
+
+    <style>
+    .ck-editor__editable {
+    min-height: 550px;
+}
+    
+    </style>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+      
+    <script src="./ckeditor.js"></script>
+
+   <div class="container">
+            <header class="blog-header py-3">
+              <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                 </div>
+                <div class="col-4 text-center">
+                  <a class="blog-header-logo text-dark font-weight-bold" href="#"> Brand X </a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                </div>
+              </div>
+            </header>
+      
+            <div class="nav-scroller py-1 mb-2">
+                    <nav class="nav d-flex justify-content-between">
+                      
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          File
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">New</a>
+                          <a class="dropdown-item" href="#">New Window</a>
+                          <a class="dropdown-item" href="#">Open</a>
+                          <a class="dropdown-item" href="#">Save</a>
+                          <a class="dropdown-item" href="#">Save As</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Page Setup</a>
+                          <a class="dropdown-item" href="#">Print</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Exit</a>
+                        </div>
+                      </div>
+                    
+
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Edit
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Undo</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Cut</a>
+                          <a class="dropdown-item" href="#">Copy</a>
+                          <a class="dropdown-item" href="#">Paste</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                          <div class="dropdown-divider"></div>
+
+                          <a class="dropdown-item" href="#">Search</a>
+                          <a class="dropdown-item" href="#">Find</a>
+                          <a class="dropdown-item" href="#">Find Next</a>
+                          <a class="dropdown-item" href="#">Find Previous</a>
+                          <a class="dropdown-item" href="#">Replace</a>
+                          <a class="dropdown-item" href="#">Goto</a>
+
+                          <div class="dropdown-divider"></div>
+
+                          <a class="dropdown-item" href="#">Select All</a>
+                          <a class="dropdown-item" href="#">Time/Date</a>
+
+                        </div>
+                      </div>
+                    
+
+                    
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Format
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Word Wrap</a>
+                          <a class="dropdown-item" href="#">Font</a>
+                        </div>
+                      </div>
+                    
+
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          View
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Zoom</a>
+                          <a class="dropdown-item" href="#">Status Bar</a>
+                        </div>
+                      </div>
+                    
+
+                    
+
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Help
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">View Help</a>
+                          <a class="dropdown-item" href="#">Send Feedback</a>
+
+                          <div class="dropdown-divider"></div>
+
+                          <a class="dropdown-item" href="#">About Brand X</a>
+                        </div>
+                      </div>
+                    
+
+                    
+                      <a class="p-2 text-muted" href="#"></a>
+                      <a class="p-2 text-muted" href="#"></a>
+                      <a class="p-2 text-muted" href="#"></a>
+                      <a class="p-2 text-muted" href="#"></a>
+                      <a class="p-2 text-muted" href="#"></a>
+                      <a class="p-2 text-muted" href="#"></a>
+                      <a class="p-2 text-muted" href="#"></a>
+                    </nav>
+                  </div>
+
+
+
+                      <div id="editor">
+
+                          
+                          </div>
+
+
+                          <script>
+ClassicEditor
+    .create( document.querySelector( '#editor' ), {
+   
+    } )
+    .then( editor => {
+        console.log( 'Editor was initialized', editor );
+    } )
+    .catch( error => {
+        console.error( error.stack );
+    } );
+                          </script>
+
+
+<footer class="footer">
+        <div class="text-left">
+          <span class="text-muted">INFM 204 Final Project</span>
+         <blockquote>Design Project 3</blockquote>
+          <p>Shirley Ni</p>
+          <p>Alex Yuan</p>
+          <p>Randy White</p>
+        </div>
+      </footer>
+
+
+</body>
+</html>
